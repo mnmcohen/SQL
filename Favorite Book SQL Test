@@ -1,0 +1,7 @@
+CREATE TABLE books (id INTEGER PRIMARY KEY, name TEXT,rating INTEGER);
+
+INSERT into books VALUES (1,"Name of the Wind",5);
+INSERT into books VALUES (2,"Red Rising",5);
+INSERT into books VALUES (3,"Lightbringer",5);
+
+SELECT * FROM books
