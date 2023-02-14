@@ -1,0 +1,26 @@
+CREATE TABLE inventory (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, item_type TEXT);
+
+INSERT INTO inventory VALUES (1, "bike", 5, 150, "toys");
+INSERT INTO inventory VALUES (2, "ladder", 10, 75, "construction");
+INSERT INTO inventory VALUES (3, "shirts", 50, 15, "clothes");
+INSERT INTO inventory VALUES (4, "pants", 50, 12, "clothes");
+INSERT INTO inventory VALUES (5, "socks", 100, 5, "clothes");
+INSERT INTO inventory VALUES (6, "chess sets", 12, 10, "toys");
+INSERT INTO inventory VALUEs (7, "hats", 20, 8, "clothes");
+INSERT INTO inventory VALUES (8, "underwear", 150, 5, "clothes");
+INSERT INTO inventory VALUES (9, "shoes", 50, 75, "clothes");
+INSERT INTO inventory VALUES (10, "hammers", 10, 25, "construction");
+INSERT INTO inventory VALUES (11, "PS5", 5, 450, "toys");
+INSERT INTO inventory VALUES (12, "XBOX_1", 5, 350, "toys");
+INSERT INTO inventory VALUES (13, "hard_hats", 50, 18, "construction");
+INSERT INTO inventory VALUES (14, "apples", 100, 1, "food");
+INSERT INTO inventory VALUES (15, "oranges", 90, .5, "food");
+INSERT INTO inventory VALUES (16, "eggplant", 20, 5, "food");
+
+SELECT *
+ FROM inventory AS inv
+ ORDER BY price;
+
+SELECT COUNT(item)
+ FROM inventory
+ WHERE item_type = "food"
